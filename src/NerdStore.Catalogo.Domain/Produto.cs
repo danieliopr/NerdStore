@@ -27,7 +27,6 @@ namespace NerdStore.Catalogo.Domain
             Dimensoes = dimensoes;
 
             Validar();
-            Dimensoes = dimensoes;
         }
 
         public void Ativar() => Ativo = true;
