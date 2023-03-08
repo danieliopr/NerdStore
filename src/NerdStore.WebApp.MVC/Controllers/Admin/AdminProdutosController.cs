@@ -30,6 +30,7 @@ namespace NerdStore.WebApp.MVC.Controllers.Admin
         [HttpPost]
         public async Task<IActionResult> NovoProduto(ProdutoDto produtoViewModel)
         {
+            ModelState.Remove("Categorias");
             if (!ModelState.IsValid) return View(await PopularCategorias(produtoViewModel));
 
             await _produtoAppService.AdicionarProduto(produtoViewModel);
@@ -50,7 +51,7 @@ namespace NerdStore.WebApp.MVC.Controllers.Admin
         {
             var produto = await _produtoAppService.ObterPorId(id);
             produtoViewModel.QuantidadeEstoque = produto.QuantidadeEstoque;
-
+            ModelState.Remove("Categorias");
             ModelState.Remove("QuantidadeEstoque");
             if (!ModelState.IsValid) return View(await PopularCategorias(produtoViewModel));
 
