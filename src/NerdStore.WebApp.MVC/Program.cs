@@ -1,12 +1,9 @@
-using MediatR;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using NerdStore.Catalogo.Application.AutoMapper;
-using NerdStore.Catalogo.Data;
-using NerdStore.WebApi.MVC.Data;
-using NerdStore.WebApi.MVC.Setup;
-
+using NerdStore.WebApp.MVC.Data;
+using NerdStore.WebApp.MVC.Setup;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,15 +13,14 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-builder.Services.AddDbContext<CatalogoContext>(options =>
-                options.UseSqlServer(connectionString));
-
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddAutoMapper(typeof(DomainToDtoMappingProfile), typeof(DtoToDomainMappingProfile));
-builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Program).Assembly));
+
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
+
 builder.Services.RegisterServices();
 
 var app = builder.Build();

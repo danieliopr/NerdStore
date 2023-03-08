@@ -1,10 +1,10 @@
 ﻿using NerdStore.Catalogo.Application.Services;
-using NerdStore.Catalogo.Data.Repository;
 using NerdStore.Catalogo.Data;
+using NerdStore.Catalogo.Data.Repository;
 using NerdStore.Catalogo.Domain;
 using NerdStore.Core.Communication;
 
-namespace NerdStore.WebApi.MVC.Setup
+namespace NerdStore.WebApp.MVC.Setup
 {
     public static class DependencyInjection
     {
@@ -18,6 +18,11 @@ namespace NerdStore.WebApi.MVC.Setup
             services.AddScoped<IProdutoAppService, ProdutoAppService>();
             services.AddScoped<IEstoqueService, EstoqueService>();
             services.AddScoped<CatalogoContext>();
+
+            //services.AddScoped<INotificationHandler<ProdutoAbaixoEstoqueEvent>, ProdutoEventHandler>();
+            //services.AddScoped<INotificationHandler<PedidoIniciadoEvent>, ProdutoEventHandler>();
+            //services.AddScoped<INotificationHandler<PedidoProcessamentoCanceladoEvent>, ProdutoEventHandler>();
+
         }
     }
 }

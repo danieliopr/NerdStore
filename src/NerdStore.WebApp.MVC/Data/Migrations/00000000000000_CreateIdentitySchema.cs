@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Migrations;
 using System;
 
-namespace NerdStore.WebApi.MVC.Data.Migrations
+namespace NerdStore.WebApp.MVC.Data.Migrations
 {
     public partial class CreateIdentitySchema : Migration
     {

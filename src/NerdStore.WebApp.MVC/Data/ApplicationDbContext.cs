@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace NerdStore.WebApi.MVC.Data
+namespace NerdStore.WebApp.MVC.Data
 {
     public class ApplicationDbContext : IdentityDbContext
     {

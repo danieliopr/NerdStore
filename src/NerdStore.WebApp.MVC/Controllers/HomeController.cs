@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using NerdStore.WebApi.MVC.Models;
+using NerdStore.WebApp.MVC.Models;
 using System.Diagnostics;
 
-namespace NerdStore.WebApi.MVC.Controllers
+namespace NerdStore.WebApp.MVC.Controllers
 {
     public class HomeController : Controller
     {

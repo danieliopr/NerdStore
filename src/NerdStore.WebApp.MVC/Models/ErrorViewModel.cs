@@ -1,4 +1,4 @@
-namespace NerdStore.WebApi.MVC.Models
+namespace NerdStore.WebApp.MVC.Models
 {
     public class ErrorViewModel
     {
