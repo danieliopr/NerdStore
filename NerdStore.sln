@@ -25,7 +25,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NerdStore.Catalogo.Data", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NerdStore.Catalogo.Application", "src\NerdStore.Catalogo.Application\NerdStore.Catalogo.Application.csproj", "{A36B34D8-6340-4E3F-9DAC-96A28C538EF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdStore.WebApp.MVC", "src\NerdStore.WebApp.MVC\NerdStore.WebApp.MVC.csproj", "{9C5BDFA8-BF64-4D36-B187-FEEF09D27052}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NerdStore.WebApp.MVC", "src\NerdStore.WebApp.MVC\NerdStore.WebApp.MVC.csproj", "{9C5BDFA8-BF64-4D36-B187-FEEF09D27052}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vendas", "Vendas", "{73A4B213-11A3-4098-9659-CD71C70CEF9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdStore.Vendas.Domain", "src\NerdStore.Vendas.Domain\NerdStore.Vendas.Domain.csproj", "{16D3E280-4EF3-4DAE-B04C-8220E1BE0136}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +61,10 @@ Global
 		{9C5BDFA8-BF64-4D36-B187-FEEF09D27052}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C5BDFA8-BF64-4D36-B187-FEEF09D27052}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C5BDFA8-BF64-4D36-B187-FEEF09D27052}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16D3E280-4EF3-4DAE-B04C-8220E1BE0136}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16D3E280-4EF3-4DAE-B04C-8220E1BE0136}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16D3E280-4EF3-4DAE-B04C-8220E1BE0136}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16D3E280-4EF3-4DAE-B04C-8220E1BE0136}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -72,6 +80,8 @@ Global
 		{BD596250-8132-41A4-A381-5695DA4DF45F} = {B6281BA7-EDC6-4B46-A686-1C5032304128}
 		{A36B34D8-6340-4E3F-9DAC-96A28C538EF4} = {B6281BA7-EDC6-4B46-A686-1C5032304128}
 		{9C5BDFA8-BF64-4D36-B187-FEEF09D27052} = {F31B9F20-4D8C-41D9-838F-5DB334422E7D}
+		{73A4B213-11A3-4098-9659-CD71C70CEF9F} = {F094A572-F340-432E-A8D1-9025E8B04A54}
+		{16D3E280-4EF3-4DAE-B04C-8220E1BE0136} = {73A4B213-11A3-4098-9659-CD71C70CEF9F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {52FB8CC1-2CE6-4939-987B-928A033C5D86}

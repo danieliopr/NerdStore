@@ -2,7 +2,7 @@
 
 namespace NerdStore.Catalogo.Domain.Events
 {
-    internal class ProdutoEventHandler : INotificationHandler<ProdutoAbaixoEstoqueEvent>
+    public class ProdutoEventHandler : INotificationHandler<ProdutoAbaixoEstoqueEvent>
     {
         private readonly IProdutoRepository _produtoRepository;
 
