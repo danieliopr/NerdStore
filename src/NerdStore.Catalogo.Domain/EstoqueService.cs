@@ -1,6 +1,6 @@
 ﻿using NerdStore.Catalogo.Domain.Events;
 using NerdStore.Core;
-using NerdStore.Core.Communication;
+using NerdStore.Core.Communication.Mediator;
 
 namespace NerdStore.Catalogo.Domain
 {

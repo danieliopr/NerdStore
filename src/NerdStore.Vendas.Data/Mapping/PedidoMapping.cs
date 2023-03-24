@@ -13,6 +13,9 @@ namespace NerdStore.Vendas.Data.Mapping
             builder.Property(c => c.Codigo)
                 .HasDefaultValueSql("NEXT VALUE FOR MinhaSequencia");
 
+            builder.Property(c => c.VoucherId)
+                .IsRequired(false);
+
             // 1 : N => Pedido : PedidoItems
             builder.HasMany(c => c.PedidoItems)
                 .WithOne(c => c.Pedido)
