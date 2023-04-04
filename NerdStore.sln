@@ -29,11 +29,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NerdStore.WebApp.MVC", "src
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vendas", "Vendas", "{73A4B213-11A3-4098-9659-CD71C70CEF9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdStore.Vendas.Domain", "src\NerdStore.Vendas.Domain\NerdStore.Vendas.Domain.csproj", "{16D3E280-4EF3-4DAE-B04C-8220E1BE0136}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NerdStore.Vendas.Domain", "src\NerdStore.Vendas.Domain\NerdStore.Vendas.Domain.csproj", "{16D3E280-4EF3-4DAE-B04C-8220E1BE0136}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdStore.Vendas.Application", "src\NerdStore.Vendas.Application\NerdStore.Vendas.Application.csproj", "{DC6C7A4C-3C89-4CC2-9554-B7E8F662356F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NerdStore.Vendas.Application", "src\NerdStore.Vendas.Application\NerdStore.Vendas.Application.csproj", "{DC6C7A4C-3C89-4CC2-9554-B7E8F662356F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdStore.Vendas.Data", "src\NerdStore.Vendas.Data\NerdStore.Vendas.Data.csproj", "{B160B297-BB13-4AEE-BB3F-647DA3BC865A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NerdStore.Vendas.Data", "src\NerdStore.Vendas.Data\NerdStore.Vendas.Data.csproj", "{B160B297-BB13-4AEE-BB3F-647DA3BC865A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pagamento", "Pagamento", "{794632CE-0AE1-4695-9214-60A280FCDCE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdStore.Pagamentos.AntiCorruption", "src\NerdStore.Pagamentos.AntiCorruption\NerdStore.Pagamentos.AntiCorruption.csproj", "{3EA8F469-BCC4-4B35-B3B9-4868EF4D4B20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdStore.Pagamentos.Business", "src\NerdStore.Pagamentos.Business\NerdStore.Pagamentos.Business.csproj", "{E41029E3-A158-4D50-8DAC-A591B5ABAA58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdStore.Pagamentos.Data", "src\NerdStore.Pagamentos.Data\NerdStore.Pagamentos.Data.csproj", "{2B19DCFE-9485-4B40-9003-2185C4EEA092}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -77,6 +85,18 @@ Global
 		{B160B297-BB13-4AEE-BB3F-647DA3BC865A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B160B297-BB13-4AEE-BB3F-647DA3BC865A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B160B297-BB13-4AEE-BB3F-647DA3BC865A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EA8F469-BCC4-4B35-B3B9-4868EF4D4B20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EA8F469-BCC4-4B35-B3B9-4868EF4D4B20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EA8F469-BCC4-4B35-B3B9-4868EF4D4B20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EA8F469-BCC4-4B35-B3B9-4868EF4D4B20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E41029E3-A158-4D50-8DAC-A591B5ABAA58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E41029E3-A158-4D50-8DAC-A591B5ABAA58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E41029E3-A158-4D50-8DAC-A591B5ABAA58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E41029E3-A158-4D50-8DAC-A591B5ABAA58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B19DCFE-9485-4B40-9003-2185C4EEA092}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B19DCFE-9485-4B40-9003-2185C4EEA092}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B19DCFE-9485-4B40-9003-2185C4EEA092}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B19DCFE-9485-4B40-9003-2185C4EEA092}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -96,6 +116,10 @@ Global
 		{16D3E280-4EF3-4DAE-B04C-8220E1BE0136} = {73A4B213-11A3-4098-9659-CD71C70CEF9F}
 		{DC6C7A4C-3C89-4CC2-9554-B7E8F662356F} = {73A4B213-11A3-4098-9659-CD71C70CEF9F}
 		{B160B297-BB13-4AEE-BB3F-647DA3BC865A} = {73A4B213-11A3-4098-9659-CD71C70CEF9F}
+		{794632CE-0AE1-4695-9214-60A280FCDCE9} = {F094A572-F340-432E-A8D1-9025E8B04A54}
+		{3EA8F469-BCC4-4B35-B3B9-4868EF4D4B20} = {794632CE-0AE1-4695-9214-60A280FCDCE9}
+		{E41029E3-A158-4D50-8DAC-A591B5ABAA58} = {794632CE-0AE1-4695-9214-60A280FCDCE9}
+		{2B19DCFE-9485-4B40-9003-2185C4EEA092} = {794632CE-0AE1-4695-9214-60A280FCDCE9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {52FB8CC1-2CE6-4939-987B-928A033C5D86}
